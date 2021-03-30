@@ -16,3 +16,4 @@ Create a Satellite Location
 4. Once all the host has been attached to the location. Assign host to Control plane and Zone-1, Zone-2, Zone-3. The rest of the unnassigned host will be assigned once the IBM Cloud serivce (OpenShift) is deployed.
 
 ![create_sat_loc](./images/assign-sat-host.png)
+
