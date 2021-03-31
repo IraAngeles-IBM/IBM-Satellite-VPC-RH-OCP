@@ -6,7 +6,7 @@ Explore IBM Satellite capabilites in deploying Red Hat OpenShift Cluster utilizi
 
 * [IBM Satellite](https://cloud.ibm.com/docs/satellite?topic=satellite-about)
 * [IBM Virtual Private Cloud - VPC](https://www.ibm.com/cloud/learn/vpc)
-8 [IBM Red Hat OpenShift in IBM Cloud](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started)
+* [IBM Red Hat OpenShift in IBM Cloud](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started)
 
 
 ## Prerequisites 
