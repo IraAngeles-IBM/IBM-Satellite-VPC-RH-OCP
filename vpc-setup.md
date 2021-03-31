@@ -4,7 +4,8 @@
 
 1. Create new virtual server instance for VPC.
 
-* Enter instance name (test-satellite), selection location (Sydney)
+* Enter instance name (test-satellite)
+* select location (Sydney)
 * Select Type of virtual server (Public).
 
 ![vpc-create-1](./images/vpc-create-1.png)
