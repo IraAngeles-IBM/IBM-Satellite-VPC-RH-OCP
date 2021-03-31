@@ -14,7 +14,7 @@
 
 ![create_sat_loc](./images/create_sat_loc_details.png)
 
-3. After creating the location, next add hosts. To add host, download the script and run in host or upload in VPC setup. (see [VPC setup](vpc-setup.md))
+3. After creating the location, next add hosts. To add host, download the `attach host script` (e.g. attachHost-ira-demo-ibm-cloud1.sh) and run in host or upload in VPC setup. (see [VPC setup](vpc-setup.md))
 
 ![create_sat_loc](./images/add-sat-host.png)
 
