@@ -6,7 +6,7 @@
 
 ## Steps
 
-* [Setup IBM Satellite](IBM-SATELLITE-SETUP.md)
+* [Setup IBM Satellite](ibm-satellite-setup.md)
 * [Create VPC Server Instance for Satellite Host](vpc-setup.md)
 * [Create Red Hat OpenShift Cluster using Satellite Infrastructure](roks-setup.md)
 
