@@ -1,4 +1,4 @@
-Red Hat OpenShift on IBM Cloud
+## Create Red Hat OpenShift Cluster on IBM Cloud
 
 1. Select Red Hat OpenShift on IBM Cloud from the Catalog
 

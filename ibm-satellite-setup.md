@@ -1,4 +1,4 @@
-Create a Satellite Location
+## Create a Satellite Location
 
 
 1. Click on the Create a Satellite Location button

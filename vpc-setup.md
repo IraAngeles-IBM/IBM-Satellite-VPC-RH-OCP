@@ -1,4 +1,4 @@
-IBM Virtual Private Cloud
+## Create Server Instance in IBM Virtual Private Cloud
 
 ![vpc-overview](./images/vpc-overview.png)
 
