@@ -18,7 +18,7 @@
 
 ![add-sat-host](./images/add-sat-host.png)
 
-4. Once all the host has been attached to the location. Assign host to Control plane for Zone-1, Zone-2, Zone-3. It is required to assign host to all zones. The rest of the unnassigned host will be assigned once the IBM Cloud serivce (OpenShift) is deployed.
+4. Once all the host has been attached to the location. Assign host to Control plane for Zone-1, Zone-2, Zone-3. It is required to assign host to all zones. The rest of the unassigned host will be assigned once the IBM Cloud serivce (OpenShift) is deployed.
 
 ![images/sat-assign-host](./images/sat-assign-host.png)
 
