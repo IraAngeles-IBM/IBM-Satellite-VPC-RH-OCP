@@ -1,6 +1,6 @@
 # Deploy Red Hat OpenShift Cluster in Satellite Host
 
-Explore IBM Satellite capabilites in deploying Red Hat OpenShift Cluster utilizing Satellite host.
+Explore IBM Satellite capabilites in deploying Red Hat OpenShift Cluster utilizing Satellite host.  This method is only for demo or proof-of-concept (PoC).  For production environment use IBM Red Hat OpenShift in IBM Cloud via Satellite Host in other cloud providers (e.g. GCP, AWS, Azure, etc) or in on-prem resources.
 
 ## IBM Cloud Services
 
@@ -17,5 +17,5 @@ Explore IBM Satellite capabilites in deploying Red Hat OpenShift Cluster utilizi
 * [Setup IBM Satellite](ibm-satellite-setup.md)
 * [Create VPC Server Instance for Satellite Host](vpc-setup.md)
 * [Create Red Hat OpenShift Cluster using Satellite Infrastructure](roks-setup.md)
-
+* [Setup VPC DNS for public access without VPN](vpc-dns-setup.md)
 

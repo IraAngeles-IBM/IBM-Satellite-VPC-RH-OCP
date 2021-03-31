@@ -19,9 +19,7 @@
 
 4. For manual configuration of server instance, upload SSH keys.  For automated setup, upload the attach host scripts in the Import user data.
 
-![vpc-create-sshkeys](./images/vpc-create-sshkeys.png)
-
-For manual configutaion via SSH, run the following commands before executing the attach host script. Or for automated setup, add the following CLI commands in the attach host script before uploading.
+For manual configuration via SSH, run the following commands before executing the attach host script. Or for automated setup, add the following CLI commands in the attach host script before uploading.
 
 ```
 subscription-manager refresh
@@ -32,7 +30,9 @@ subscription-manager repos --enable rhel-7-server-supplementary-rpms
 subscription-manager repos --enable rhel-7-server-extras-rpms
 ```
 
-5. Once the setup is confirmed, click on the Create virtual server instance
+![vpc-create-sshkeys](./images/vpc-create-sshkeys.png)
+
+5. Once the setup is confirmed, click on the `Create virtual server instance`
 
 ![vpc-create-intance](./images/vpc-create-intance.png)
 
@@ -40,7 +40,7 @@ subscription-manager repos --enable rhel-7-server-extras-rpms
 
 ![vpc-created-new](./images/vpc-created-new.png)
 
-7. To add Floating IP, select the host and edit the corresponding Network interfaces, either select an existing IP address or Reserve a new floating IP.   
+7. To add *Floating IP*, select the host and edit the corresponding Network interfaces, either select an existing IP address or Reserve a new floating IP.  Floating IP is required for external access, otherwise, VPN is required to access the instances using Private IP.
 
 ![vpc-create-floating-ip](./images/vpc-create-floating-ip.png)
 
