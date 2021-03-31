@@ -18,6 +18,17 @@ IBM Virtual Private Cloud
 
 ![vpc-create-sshkeys](./images/vpc-create-sshkeys.png)
 
+For manual configutaion via SSH, run the following commands before executing the attach host script. Or for automated setup, add the following CLI commands in the attach host script before uploading.
+
+```
+subscription-manager refresh
+subscription-manager repos --enable rhel-server-rhscl-7-rpms
+subscription-manager repos --enable rhel-7-server-optional-rpms
+subscription-manager repos --enable rhel-7-server-rh-common-rpms
+subscription-manager repos --enable rhel-7-server-supplementary-rpms
+subscription-manager repos --enable rhel-7-server-extras-rpms
+```
+
 5. Once the setup is confirmed, click on the Create virtual server instance
 
 ![vpc-create-intance](./images/vpc-create-intance.png)
@@ -29,3 +40,4 @@ IBM Virtual Private Cloud
 7. To add Floating IP, select the host and edit the corresponding Network interfaces, either select an existing IP address or Reserve a new floating IP.   
 
 ![vpc-create-floating-ip](./images/vpc-create-floating-ip.png)
+
