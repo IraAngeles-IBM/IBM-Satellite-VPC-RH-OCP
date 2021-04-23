@@ -6,7 +6,7 @@ site_author: Ira Angeles
 # Repository
 repo_name: IBM-Satellite-VPC-RH-OCP
 repo_url: https://github.com/IraAngeles-IBM/IBM-Satellite-VPC-RH-OCP
-edit_uri: edit/master/docs
+edit_uri: edit/main/docs
 
 nav:
     - Welcome:
@@ -18,6 +18,7 @@ nav:
       - Create Satellite locations and attach hosts: attach-hosts.md
       - Create Red Hat OpenShift Cluster using Satellite Infrastructure: roks-setup.md
       - Setup VPC DNS for public access without VPN: vpc-dns-setup.md
+
 theme:
   name: material
   font:
