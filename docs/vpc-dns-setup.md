@@ -26,6 +26,7 @@ Setup VPC DNS for public access, othewise, VPN is required to access the cluster
         ira-demo-sat-cluster-satellite   c1gmq42w0g3jucqlern0   normal   1 day ago    3         ira-demo-ibm-cloud   4.5.31_1531_openshift   default               satellite   
         ira-demo-sng01-b3c.4x16          c19bq46t0jcg8lonbseg   normal   1 week ago   2         sng01                4.5.31_1531_openshift   default               classic  
         ```
+
 3. Connect to the Satellite cluster
 
     ```

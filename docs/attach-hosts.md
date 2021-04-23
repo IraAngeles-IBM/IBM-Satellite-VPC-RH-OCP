@@ -1,4 +1,4 @@
-# Create Satellite Locations, Attach and Assign host
+## Create Satellite Locations, Attach and Assign host
 
 1. Go to Satellite -> Locations, then `Create Location` button.  Select `Manual setup`, enter the preferred Satellite location `Name`, select the appropriate location where the host will be `Manage from` (e.g. London or Washington DC). Confirm all information then proceed to `Create Location`. 
 

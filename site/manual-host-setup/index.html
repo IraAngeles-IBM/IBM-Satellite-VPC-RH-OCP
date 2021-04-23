@@ -298,8 +298,6 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Manually Setup Host
@@ -315,14 +313,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup-each-host-manually" class="md-nav__link">
+    Setup each Host Manually
+  </a>
+  
+</li>
       
     </ul>
   
@@ -390,14 +393,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup-each-host-manually" class="md-nav__link">
+    Setup each Host Manually
+  </a>
+  
+</li>
       
     </ul>
   
@@ -416,7 +424,9 @@
                   </a>
                 
                 
-                <h1 id="setup-each-host-manually">Setup each Host Manually<a class="headerlink" href="#setup-each-host-manually" title="Permanent link">&para;</a></h1>
+                  <h1>Manually Setup Host</h1>
+                
+                <h2 id="setup-each-host-manually">Setup each Host Manually<a class="headerlink" href="#setup-each-host-manually" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>SSH to each host and update the hostname. Use the command <code>hostnamectl</code> to update the hostname. Hostname will be updated however, terminal session hostname will be update upon next login or re-login to check if update. Ensure hostnames are unique to avoid conflict during setup.</p>
