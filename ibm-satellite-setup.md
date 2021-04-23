@@ -7,10 +7,10 @@
 
 2. Enter the location details; 
 
-* Select Manual Setup (a)
-* Name of the Location (ira-demo-ibm-cloud) (b)
-* Select where the location is managed (Washington DC) (c)
-* Click on the `Create location` button (d)
+    * Select Manual Setup (a)
+    * Name of the Location (ira-demo-ibm-cloud) (b)
+    * Select where the location is managed (Washington DC) (c)
+    * Click on the `Create location` button (d)
 
     ![create_sat_loc_details](./images/create_sat_loc_details.png)
 
@@ -19,7 +19,7 @@
     ![add-sat-host](./images/add-sat-host.png)
 
 4. Once all the host has been attached to the location. Assign host to Control plane for Zone-1, Zone-2, Zone-3. It is required to assign host to all zones. The rest of the unassigned host will be assigned once the IBM Cloud serivce (OpenShift) is deployed.
-
+    
     ![images/sat-assign-host](./images/sat-assign-host.png)
 
 5. The following shows all assigned hosts.
