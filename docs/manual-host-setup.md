@@ -2,8 +2,8 @@
 
 1. SSH to each host and update the hostname. Use the command `hostnamectl` to update the hostname. Hostname will be updated however, terminal session hostname will be update upon next login or re-login to check if update. Ensure hostnames are unique to avoid conflict during setup.
 
-    ```
-    [root@localhost ~]# hostnamectl set-hostname ira-sat-on-prem-demo-zone-2
+    ```shell
+    hostnamectl set-hostname ira-sat-on-prem-demo-zone-2
     ```
 
 2. Ensure Red Hat subscription license covers Red Hat Software Collections.  Register host using subscription-manager and enter the username, password, and Pool ID when needed.
@@ -12,9 +12,9 @@
     subscription-manager register
     ```
 
-Sample output:
+    Sample output:
 
-    ```
+    ```shell
     [root@localhost ~]# subscription-manager register 
     Unregistering from: subscription.rhsm.redhat.com:443/subscription
     Registering to: subscription.rhsm.redhat.com:443/subscription

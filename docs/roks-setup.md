@@ -6,7 +6,7 @@
 
 2. To create Red Hat OpenShift Cluster using Satellite host, select Satellite in the Infrastructure.
 
-        ![roks-satellite](./images/roks-satellite.png)
+    ![roks-satellite](./images/roks-satellite.png)
 
 3. Select the Satellite host location. Ensure the location state is **Normal** with minimum of 6 hosts. Three (3) hosts are required for the control plane and three (3) for the worker nodes.   Red Hat OpenShift requires minimum of 2 worker nodes however not recommended for production environment.
 

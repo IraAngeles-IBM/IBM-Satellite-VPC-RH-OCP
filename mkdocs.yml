@@ -1,0 +1,73 @@
+# Project information
+site_name: Deploy Red Hat OpenShift Cluster in VPC Server Instance via Satellite Host 
+site_url: https://github.com/IraAngeles-IBM/IBM-Satellite-VPC-RH-OCP
+site_author: Ira Angeles
+
+# Repository
+repo_name: IBM-Satellite-VPC-RH-OCP
+repo_url: https://github.com/IraAngeles-IBM/IBM-Satellite-VPC-RH-OCP
+edit_uri: edit/master/docs
+
+nav:
+    - Welcome:
+      - About: index.md
+    - Workshop:
+      - Setup IBM Satellite: ibm-satellite-setup.md
+      - Create VPC Server Instance for Satellite Host: vpc-setup.md
+      - Manually Setup Host: manual-host-setup.md
+      - Create Satellite locations and attach hosts: attach-hosts.md
+      - Create Red Hat OpenShift Cluster using Satellite Infrastructure: roks-setup.md
+      - Setup VPC DNS for public access without VPN: vpc-dns-setup.md
+theme:
+  name: material
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  icon:
+    logo: material/library
+  features:
+    # - navigation.tabs
+    - navigation.instant
+  palette:
+    scheme: default
+    primary: blue
+    accent: blue
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+
