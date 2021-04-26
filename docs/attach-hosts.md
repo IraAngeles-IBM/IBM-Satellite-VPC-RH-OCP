@@ -6,7 +6,7 @@
 
     ![Create Sat Location](images/create-sat-loc.png)
 
-# Attach host
+# Attach host to the location
 
 2. After successful creation of the Satellite location, proceed to the location, select `Host`, then `Attach host`.
 
@@ -44,7 +44,7 @@
 
     ![host-ready](images/host-ready.png)
 
-# Assign host
+# Assign host to the Control plane
 
 9. Select the `Ready` and `Unassigned` host to the Control plane. 
 
