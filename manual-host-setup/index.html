@@ -18,7 +18,7 @@
     
     
       
-        <title>Manually Setup Host - Deploy Red Hat OpenShift Cluster in VPC Server Instance via Satellite Host</title>
+        <title>Setup Satellite Host - Deploy Red Hat OpenShift Cluster in VPC Server Instance via Satellite Host</title>
       
     
     
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Manually Setup Host
+              Setup Satellite Host
             
           </span>
         </div>
@@ -268,18 +268,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../ibm-satellite-setup/" class="md-nav__link">
-        Setup IBM Satellite
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../vpc-setup/" class="md-nav__link">
         Create VPC Server Instance for Satellite Host
       </a>
@@ -300,12 +288,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Manually Setup Host
+          Setup Satellite Host
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Manually Setup Host
+        Setup Satellite Host
       </a>
       
         
@@ -328,8 +316,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#assign-unique-ostname" class="md-nav__link">
-    Assign unique ostname
+  <a href="#assign-unique-hostname" class="md-nav__link">
+    Assign unique hostname
   </a>
   
 </li>
@@ -436,8 +424,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#assign-unique-ostname" class="md-nav__link">
-    Assign unique ostname
+  <a href="#assign-unique-hostname" class="md-nav__link">
+    Assign unique hostname
   </a>
   
 </li>
@@ -480,10 +468,10 @@
                   </a>
                 
                 
-                  <h1>Manually Setup Host</h1>
+                  <h1>Setup Satellite Host</h1>
                 
                 <h2 id="setup-each-host-manually">Setup each Host Manually<a class="headerlink" href="#setup-each-host-manually" title="Permanent link">&para;</a></h2>
-<h2 id="assign-unique-ostname">Assign unique ostname<a class="headerlink" href="#assign-unique-ostname" title="Permanent link">&para;</a></h2>
+<h2 id="assign-unique-hostname">Assign unique hostname<a class="headerlink" href="#assign-unique-hostname" title="Permanent link">&para;</a></h2>
 <p>SSH to each host and update the hostname. Use the command <code>hostnamectl</code> to update the hostname. Hostname will be updated however, terminal session hostname will be update upon next login or re-login to check if update. Ensure hostnames are unique to avoid conflict during setup.</p>
 <div class="highlight"><pre><span></span><code>```shell
 hostnamectl set-hostname ira-sat-on-prem-demo-zone-2
