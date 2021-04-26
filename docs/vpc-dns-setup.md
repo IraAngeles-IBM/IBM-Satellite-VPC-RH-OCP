@@ -4,13 +4,13 @@ Setup VPC DNS for public access, othewise, VPN is required to access the cluster
 
 1. Login to IBM Cloud via the `ibmcloud CLI`
 
-    ```
+    ```shell
     ibmcloud login
     ``` 
 
     for federated account 
 
-    ```
+    ```shell
     ibmcloud login --sso
     ``` 
 

@@ -18,7 +18,7 @@
     [root@localhost ~]# subscription-manager register 
     Unregistering from: subscription.rhsm.redhat.com:443/subscription
     Registering to: subscription.rhsm.redhat.com:443/subscription
-    Username: isaias66
+    Username: <username>
     Password: 
     The system has been registered with ID: 82076cd1-7f08-40fa-a536-d300c3a31f11
     The registered system name is: ira-sat-on-prem-demo-zone-2
@@ -26,7 +26,7 @@
 
 3. After successful registration of host next attach the host to the subscription with command `subscription-manager attach`.
 
-    ```
+    ```shell
     [root@ira-on-prem-zone3 ira]# subscription-manager attach 
     Installed Product Current Status:
     Product Name: Red Hat Enterprise Linux for x86_64
@@ -35,7 +35,7 @@
 
 4. Enable the following repositories:
 
-    ```
+    ```shell
     subscription-manager refresh
     subscription-manager repos --enable rhel-server-rhscl-7-rpms
     subscription-manager repos --enable rhel-7-server-optional-rpms
