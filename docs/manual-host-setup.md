@@ -8,7 +8,7 @@ SSH to each host and update the hostname. Use the command `hostnamectl` to updat
     hostnamectl set-hostname ira-sat-on-prem-demo-zone-2
     ```
 
-# Register host via subcription manager
+## Register host via subcription manager
 
 Ensure Red Hat subscription license covers Red Hat Software Collections.  Register host using subscription-manager and enter the username, password, and Pool ID when needed.
 
@@ -28,7 +28,7 @@ Ensure Red Hat subscription license covers Red Hat Software Collections.  Regist
     The registered system name is: ira-sat-on-prem-demo-zone-2
     ```
 
-# Attach host to Satellite location Control plane
+## Attach host to Satellite location Control plane
 
 After successful registration of host next attach the host to the subscription with command `subscription-manager attach`.
 
@@ -39,7 +39,7 @@ After successful registration of host next attach the host to the subscription w
     Status:       Subscribed
     ```
 
-# Add RHEL repositories
+## Add RHEL repositories
 
 Use the following `subscription-manager` commands to enable the following repositories:
 
