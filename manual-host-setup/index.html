@@ -480,6 +480,8 @@
                   </a>
                 
                 
+                  <h1>Manually Setup Host</h1>
+                
                 <h2 id="setup-each-host-manually">Setup each Host Manually<a class="headerlink" href="#setup-each-host-manually" title="Permanent link">&para;</a></h2>
 <h2 id="assign-unique-ostname">Assign unique ostname<a class="headerlink" href="#assign-unique-ostname" title="Permanent link">&para;</a></h2>
 <p>SSH to each host and update the hostname. Use the command <code>hostnamectl</code> to update the hostname. Hostname will be updated however, terminal session hostname will be update upon next login or re-login to check if update. Ensure hostnames are unique to avoid conflict during setup.</p>
@@ -487,7 +489,7 @@
 hostnamectl set-hostname ira-sat-on-prem-demo-zone-2
 ```
 </code></pre></div>
-<h1 id="register-host-via-subcription-manager">Register host via subcription manager<a class="headerlink" href="#register-host-via-subcription-manager" title="Permanent link">&para;</a></h1>
+<h2 id="register-host-via-subcription-manager">Register host via subcription manager<a class="headerlink" href="#register-host-via-subcription-manager" title="Permanent link">&para;</a></h2>
 <p>Ensure Red Hat subscription license covers Red Hat Software Collections.  Register host using subscription-manager and enter the username, password, and Pool ID when needed.</p>
 <div class="highlight"><pre><span></span><code>```
 subscription-manager register
@@ -505,7 +507,7 @@ The system has been registered with ID: 82076cd1-7f08-40fa-a536-d300c3a31f11
 The registered system name is: ira-sat-on-prem-demo-zone-2
 ```
 </code></pre></div>
-<h1 id="attach-host-to-satellite-location-control-plane">Attach host to Satellite location Control plane<a class="headerlink" href="#attach-host-to-satellite-location-control-plane" title="Permanent link">&para;</a></h1>
+<h2 id="attach-host-to-satellite-location-control-plane">Attach host to Satellite location Control plane<a class="headerlink" href="#attach-host-to-satellite-location-control-plane" title="Permanent link">&para;</a></h2>
 <p>After successful registration of host next attach the host to the subscription with command <code>subscription-manager attach</code>.</p>
 <div class="highlight"><pre><span></span><code>```shell
 [root@ira-on-prem-zone3 ira]# subscription-manager attach 
@@ -514,7 +516,7 @@ Product Name: Red Hat Enterprise Linux for x86_64
 Status:       Subscribed
 ```
 </code></pre></div>
-<h1 id="add-rhel-repositories">Add RHEL repositories<a class="headerlink" href="#add-rhel-repositories" title="Permanent link">&para;</a></h1>
+<h2 id="add-rhel-repositories">Add RHEL repositories<a class="headerlink" href="#add-rhel-repositories" title="Permanent link">&para;</a></h2>
 <p>Use the following <code>subscription-manager</code> commands to enable the following repositories:</p>
 <div class="highlight"><pre><span></span><code>```shell
 subscription-manager refresh
