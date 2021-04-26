@@ -4,7 +4,7 @@
 
 Go to Satellite -> Locations, then `Create Location` button.  Select `Manual setup`, enter the preferred Satellite location `Name`, select the appropriate location where the host will be `Manage from` (e.g. London or Washington DC). Confirm all information then proceed to `Create Location`. 
 
-    ![Create Sat Location](images/create-sat-loc.png)
+![Create Sat Location](images/create-sat-loc.png)
 
 ## Attach host to the location
 
