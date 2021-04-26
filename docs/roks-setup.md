@@ -10,7 +10,7 @@
 
 3. Select the Satellite host location. Ensure the location state is **Normal** with minimum of 6 hosts. Three (3) hosts are required for the control plane and three (3) for the worker nodes.   Red Hat OpenShift requires minimum of 2 worker nodes however not recommended for production environment.
 
-![roks-location](./images/roks-location.png)
+    ![roks-location](./images/roks-location.png)
 
 4. Finalize the cluster details to create the cluster
 

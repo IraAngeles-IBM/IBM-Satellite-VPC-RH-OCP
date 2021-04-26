@@ -41,7 +41,7 @@ Go to Satellite -> Locations, then `Create Location` button.  Select `Manual set
     journalctl -f -u ibm-host-attach
     ```
 
-7. Check if the host is added in the Satellite location
+7. Check the host in the Satellite location
 
     ![host-ready](images/host-ready.png)
 
