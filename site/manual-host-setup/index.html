@@ -456,13 +456,25 @@ Status:       Subscribed
 </code></pre></div>
 </li>
 <li>
-<p>Enable the following repositories:</p>
+<p>Use the following <code>subscription-manager</code> commands to enable the following repositories:</p>
 <div class="highlight"><pre><span></span><code>subscription-manager refresh
 subscription-manager repos --enable rhel-server-rhscl-7-rpms
 subscription-manager repos --enable rhel-7-server-optional-rpms
 subscription-manager repos --enable rhel-7-server-rh-common-rpms
 subscription-manager repos --enable rhel-7-server-supplementary-rpms
 subscription-manager repos --enable rhel-7-server-extras-rpms
+</code></pre></div>
+<p>Sample output:</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>root@ira-sat-on-prem-demo ~<span class="o">]</span><span class="c1"># subscription-manager repos --enable rhel-server-rhscl-7-rpms</span>
+Repository <span class="s1">&#39;rhel-server-rhscl-7-rpms&#39;</span> is enabled <span class="k">for</span> this system.
+<span class="o">[</span>root@ira-sat-on-prem-demo ~<span class="o">]</span><span class="c1"># subscription-manager repos --enable rhel-7-server-optional-rpms</span>
+Repository <span class="s1">&#39;rhel-7-server-optional-rpms&#39;</span> is enabled <span class="k">for</span> this system.
+<span class="o">[</span>root@ira-sat-on-prem-demo ~<span class="o">]</span><span class="c1"># subscription-manager repos --enable rhel-7-server-rh-common-rpms</span>
+Repository <span class="s1">&#39;rhel-7-server-rh-common-rpms&#39;</span> is enabled <span class="k">for</span> this system.
+<span class="o">[</span>root@ira-sat-on-prem-demo ~<span class="o">]</span><span class="c1"># subscription-manager repos --enable rhel-7-server-supplementary-rpms</span>
+Repository <span class="s1">&#39;rhel-7-server-supplementary-rpms&#39;</span> is enabled <span class="k">for</span> this system.
+<span class="o">[</span>root@ira-sat-on-prem-demo ~<span class="o">]</span><span class="c1"># subscription-manager repos --enable rhel-7-server-extras-rpms</span>
+Repository <span class="s1">&#39;rhel-7-server-extras-rpms&#39;</span> is enabled <span class="k">for</span> this system.
 </code></pre></div>
 </li>
 </ol>

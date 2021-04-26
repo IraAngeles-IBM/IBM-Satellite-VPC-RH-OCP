@@ -33,7 +33,7 @@
     Status:       Subscribed
     ```
 
-4. Enable the following repositories:
+4. Use the following `subscription-manager` commands to enable the following repositories:
 
     ```shell
     subscription-manager refresh
@@ -43,4 +43,20 @@
     subscription-manager repos --enable rhel-7-server-supplementary-rpms
     subscription-manager repos --enable rhel-7-server-extras-rpms
     ```
+
+    Sample output:
+
+    ```shell
+    [root@ira-sat-on-prem-demo ~]# subscription-manager repos --enable rhel-server-rhscl-7-rpms
+    Repository 'rhel-server-rhscl-7-rpms' is enabled for this system.
+    [root@ira-sat-on-prem-demo ~]# subscription-manager repos --enable rhel-7-server-optional-rpms
+    Repository 'rhel-7-server-optional-rpms' is enabled for this system.
+    [root@ira-sat-on-prem-demo ~]# subscription-manager repos --enable rhel-7-server-rh-common-rpms
+    Repository 'rhel-7-server-rh-common-rpms' is enabled for this system.
+    [root@ira-sat-on-prem-demo ~]# subscription-manager repos --enable rhel-7-server-supplementary-rpms
+    Repository 'rhel-7-server-supplementary-rpms' is enabled for this system.
+    [root@ira-sat-on-prem-demo ~]# subscription-manager repos --enable rhel-7-server-extras-rpms
+    Repository 'rhel-7-server-extras-rpms' is enabled for this system.
+    ```
+
 
