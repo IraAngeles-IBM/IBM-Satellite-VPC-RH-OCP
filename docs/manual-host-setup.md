@@ -1,5 +1,7 @@
 ## Setup each Host Manually
 
+The following steps must be repeated for each hosts.
+
 ## Assign unique hostname
 
 SSH to each host and update the hostname. Use the command `hostnamectl` to update the hostname. Hostname will be updated however, terminal session hostname will be update upon next login or re-login to check if update. Ensure hostnames are unique to avoid conflict during setup.

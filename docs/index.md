@@ -11,6 +11,7 @@ Explore IBM Satellite capabilites in deploying Red Hat OpenShift Cluster utilizi
 
 ## Prerequisites 
 * A Pay-As-You-Go or Subscription [IBM Cloud account](https://cloud.ibm.com/registration)
+* Minimum of 6 hosts with 4 cores, 16GB memory and 100GB storage
 
 
 ## Steps
