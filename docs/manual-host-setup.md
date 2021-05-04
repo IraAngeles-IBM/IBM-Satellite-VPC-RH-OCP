@@ -1,6 +1,6 @@
 ## Setup each Host Manually
 
-The following steps must be repeated for each hosts.
+The following steps are the setup required for each hosts.
 
 ## Assign unique hostname
 
