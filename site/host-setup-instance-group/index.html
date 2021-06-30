@@ -11,14 +11,14 @@
         <meta name="author" content="Ira Angeles">
       
       
-        <link rel="canonical" href="https://github.com/IraAngeles-IBM/IBM-Satellite-VPC-RH-OCP/SUMMARY/">
+        <link rel="canonical" href="https://github.com/IraAngeles-IBM/IBM-Satellite-VPC-RH-OCP/host-setup-instance-group/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
     
     
       
-        <title>Table of contents - Deploy Red Hat OpenShift Cluster in VPC Server Instance via Satellite Host</title>
+        <title>Instance Group Setup - Deploy Red Hat OpenShift Cluster in VPC Server Instance via Satellite Host</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#table-of-contents" class="md-skip">
+        <a href="#setup-host-via-vpc-intance-group" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Table of contents
+              Instance Group Setup
             
           </span>
         </div>
@@ -243,12 +243,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       <label class="md-nav__link" for="__nav_2">
         Workshop
@@ -276,12 +278,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
       
       <label class="md-nav__link" for="__nav_2_2">
         Setup Satellite Host
@@ -309,11 +313,65 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../host-setup-instance-group/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Instance Group Setup
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Instance Group Setup
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-create-instance-templace-for-vpc" class="md-nav__link">
+    1. Create Instance templace for VPC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-create-intance-group" class="md-nav__link">
+    2. Create Intance Group
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-check-the-satellite-location-host" class="md-nav__link">
+    3. Check the Satellite location host
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -392,15 +450,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#about-this-workshop" class="md-nav__link">
-    About this workshop
+  <a href="#1-create-instance-templace-for-vpc" class="md-nav__link">
+    1. Create Instance templace for VPC
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#workshop-setup" class="md-nav__link">
-    Workshop setup
+  <a href="#2-create-intance-group" class="md-nav__link">
+    2. Create Intance Group
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-check-the-satellite-location-host" class="md-nav__link">
+    3. Check the Satellite location host
   </a>
   
 </li>
@@ -417,24 +482,28 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/IraAngeles-IBM/IBM-Satellite-VPC-RH-OCP/edit/main/docs/SUMMARY.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/IraAngeles-IBM/IBM-Satellite-VPC-RH-OCP/edit/main/docs/host-setup-instance-group.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="table-of-contents">Table of contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h1>
-<h3 id="about-this-workshop">About this workshop<a class="headerlink" href="#about-this-workshop" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="..">Overview</a></li>
-</ul>
-<h3 id="workshop-setup">Workshop setup<a class="headerlink" href="#workshop-setup" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="../vpc-setup/">Create VPC Server Instance for Satellite Host</a></li>
-<li><a href="../manual-host-setup/">Setup Host</a></li>
-<li><a href="../attach-hosts/">Create Satellite locations and attach hosts</a></li>
-<li><a href="../roks-setup/">Create Red Hat OpenShift Cluster using Satellite Infrastructure</a></li>
-<li><a href="../vpc-dns-setup/">Setup VPC DNS for public access without VPN</a></li>
-</ul>
+                <h1 id="setup-host-via-vpc-intance-group">Setup host via VPC Intance Group<a class="headerlink" href="#setup-host-via-vpc-intance-group" title="Permanent link">&para;</a></h1>
+<h2 id="1-create-instance-templace-for-vpc">1. Create Instance templace for VPC<a class="headerlink" href="#1-create-instance-templace-for-vpc" title="Permanent link">&para;</a></h2>
+<p>a. Select <code>Instance templates for VPC</code> in VPC Infastructure 
+<img alt="vpc-instance-template" src="../images/vpc-instance-template.png" /></p>
+<p>b. Upload the attach script file and add commands <code>subscription-manager refresh</code> and <code>subscription-manager repos --enable=*</code></p>
+<p><img alt="vpc-upload-attach-script" src="../images/vpc-upload-attach-script.png" /></p>
+<p>c.  Select <strong>Location</strong>, <strong>Operating System Image</strong> <code>RHEL 7</code>, then proceed with the <strong>Create Instance template</strong></p>
+<p><img alt="vpc-create-instance-template" src="../images/vpc-create-instance-template.png" /></p>
+<h2 id="2-create-intance-group">2. Create Intance Group<a class="headerlink" href="#2-create-intance-group" title="Permanent link">&para;</a></h2>
+<p>Select the appropriate instance teamplate, then choose <strong>Static</strong>, <strong>Set instance group size</strong> (enter 6 for minimum Satellite host) and <strong>Create instance group</strong></p>
+<p><img alt="vpc-instance-group" src="../images/vpc-instance-group.png" /></p>
+<p>This is the diplay after creating the instance group</p>
+<p><img alt="vpc-creating-instance-group" src="../images/vpc-creating-instance-group.png" /></p>
+<p>Check the status in the <strong>Virtual server instances</strong>, add <strong>Floating IP</strong> if not yet added.</p>
+<p><img alt="vpc-creating-instance-group-status" src="../images/vpc-creating-instance-group-status.png" /></p>
+<h2 id="3-check-the-satellite-location-host">3. Check the Satellite location host<a class="headerlink" href="#3-check-the-satellite-location-host" title="Permanent link">&para;</a></h2>
+<p><img alt="ibm-cloud-vpc-host-auto-sat" src="../images/ibm-cloud-vpc-host-auto-sat.png" /></p>
                 
               
               
@@ -450,6 +519,39 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../manual-host-setup/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Manual Setup
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../attach-hosts/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Create Satellite locations and attach hosts
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
