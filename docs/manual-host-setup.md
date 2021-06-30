@@ -12,7 +12,7 @@ hostnamectl set-hostname ira-sat-on-prem-demo-zone-2
 
 ## 2. Host Red Hat Subcription Manager registration
 
-The following steps are for custom images or from on-prem setup.  These steps can be skipped for instances using the IBM Cloud provided OS images.
+The following steps are for IBM Cloud custom OS images or on-prem setup.  These steps can be skipped for instances using the IBM Cloud provided OS images.
 
 ### a. Register host via subscription manager
 
