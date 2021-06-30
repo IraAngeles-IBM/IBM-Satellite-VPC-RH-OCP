@@ -15,7 +15,7 @@ nav:
       - Create VPC Server Instance for Satellite Host: vpc-setup.md
       - Setup Satellite Host:
         - Manual Setup: manual-host-setup.md
-        - Instance Group Setup: host-setup-instance-group.md
+        - VPC Instance Group Setup: host-setup-instance-group.md
       - Create Satellite locations and attach hosts: attach-hosts.md
       - Create Red Hat OpenShift Cluster using Satellite Infrastructure: roks-setup.md
       - Setup VPC DNS for public access without VPN: vpc-dns-setup.md

@@ -25,8 +25,3 @@ Explore IBM Satellite capabilites in deploying Red Hat OpenShift Cluster utilizi
 
 Note:
 For on-prem host, skip `Create VPC Server Instance for Satellite Host`
-
-
-      - Setup Satellite Host:
-        - Manual Setup: manual-host-setup.md
-        - Instance Group Setup: host-setup-instance-group.md
