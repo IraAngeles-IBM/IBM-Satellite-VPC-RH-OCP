@@ -12,9 +12,9 @@ hostnamectl set-hostname ira-sat-on-prem-demo-zone-2
 
 ## 2. Host Red Hat Subcription Manager registration
 
-This is step is for custom images or from on-prem setup.  These steps can be skipped for instances using the IBM Cloud provided OS images.
+The following steps are for custom images or from on-prem setup.  These steps can be skipped for instances using the IBM Cloud provided OS images.
 
-### Register host via subscription manager
+### a. Register host via subscription manager
 
 Ensure Red Hat subscription license covers Red Hat Software Collections.  Register host using subscription-manager and enter the username, password, and Pool ID when needed.
 
@@ -34,7 +34,7 @@ The system has been registered with ID: 82076cd1-7f08-40fa-a536-d300c3a31f11
 The registered system name is: ira-sat-on-prem-demo-zone-2
 ```
 
-### Attach host to Satellite location to Red Hat Satellite Network (RHSN)
+### b. Attach host to Satellite location to Red Hat Satellite Network (RHSN)
 
 After successful registration of host next attach the host to the subscription with command `subscription-manager attach`.
 
