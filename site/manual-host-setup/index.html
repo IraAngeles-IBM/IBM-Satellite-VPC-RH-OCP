@@ -316,29 +316,42 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#assign-unique-hostname" class="md-nav__link">
-    Assign unique hostname
+  <a href="#1-assign-unique-hostname" class="md-nav__link">
+    1. Assign unique hostname
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#register-host-via-subcription-manager" class="md-nav__link">
-    Register host via subcription manager
+  <a href="#2-host-red-hat-subcription-manager-registration" class="md-nav__link">
+    2. Host Red Hat Subcription Manager registration
   </a>
+  
+    <nav class="md-nav" aria-label="2. Host Red Hat Subcription Manager registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#register-host-via-subscription-manager" class="md-nav__link">
+    Register host via subscription manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attach-host-to-satellite-location-to-red-hat-satellite-network-rhsn" class="md-nav__link">
+    Attach host to Satellite location to Red Hat Satellite Network (RHSN)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#attach-host-to-satellite-location-control-plane" class="md-nav__link">
-    Attach host to Satellite location Control plane
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-rhel-repositories" class="md-nav__link">
-    Add RHEL repositories
+  <a href="#3-add-rhel-repositories" class="md-nav__link">
+    3. Add RHEL repositories
   </a>
   
 </li>
@@ -424,29 +437,42 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#assign-unique-hostname" class="md-nav__link">
-    Assign unique hostname
+  <a href="#1-assign-unique-hostname" class="md-nav__link">
+    1. Assign unique hostname
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#register-host-via-subcription-manager" class="md-nav__link">
-    Register host via subcription manager
+  <a href="#2-host-red-hat-subcription-manager-registration" class="md-nav__link">
+    2. Host Red Hat Subcription Manager registration
   </a>
+  
+    <nav class="md-nav" aria-label="2. Host Red Hat Subcription Manager registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#register-host-via-subscription-manager" class="md-nav__link">
+    Register host via subscription manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attach-host-to-satellite-location-to-red-hat-satellite-network-rhsn" class="md-nav__link">
+    Attach host to Satellite location to Red Hat Satellite Network (RHSN)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#attach-host-to-satellite-location-control-plane" class="md-nav__link">
-    Attach host to Satellite location Control plane
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-rhel-repositories" class="md-nav__link">
-    Add RHEL repositories
+  <a href="#3-add-rhel-repositories" class="md-nav__link">
+    3. Add RHEL repositories
   </a>
   
 </li>
@@ -472,11 +498,13 @@
                 
                 <h2 id="setup-each-host-manually">Setup each Host Manually<a class="headerlink" href="#setup-each-host-manually" title="Permanent link">&para;</a></h2>
 <p>The following steps are the setup required for each hosts.</p>
-<h2 id="assign-unique-hostname">Assign unique hostname<a class="headerlink" href="#assign-unique-hostname" title="Permanent link">&para;</a></h2>
-<p>SSH to each host and update the hostname. Use the command <code>hostnamectl</code> to update the hostname. Hostname will be updated however, terminal session hostname will be update upon next login or re-login to check if update. Ensure hostnames are unique to avoid conflict during setup.</p>
+<h2 id="1-assign-unique-hostname">1. Assign unique hostname<a class="headerlink" href="#1-assign-unique-hostname" title="Permanent link">&para;</a></h2>
+<p>SSH to each host and update the hostname. Use the command <code>hostnamectl</code> to update the hostname. Hostname will be updated however, terminal session hostname will be update upon next login or re-login to check if update. Ensure hostnames are unique to avoid conflict during setup. If the host is already assigned with a unique hostname, this step can be skipped unless it is desired to assign a preferred hostname.</p>
 <div class="highlight"><pre><span></span><code>hostnamectl set-hostname ira-sat-on-prem-demo-zone-2
 </code></pre></div>
-<h2 id="register-host-via-subcription-manager">Register host via subcription manager<a class="headerlink" href="#register-host-via-subcription-manager" title="Permanent link">&para;</a></h2>
+<h2 id="2-host-red-hat-subcription-manager-registration">2. Host Red Hat Subcription Manager registration<a class="headerlink" href="#2-host-red-hat-subcription-manager-registration" title="Permanent link">&para;</a></h2>
+<p>This is step is for custom images or from on-prem setup.  These steps can be skipped for instances using the IBM Cloud provided OS images.</p>
+<h3 id="register-host-via-subscription-manager">Register host via subscription manager<a class="headerlink" href="#register-host-via-subscription-manager" title="Permanent link">&para;</a></h3>
 <p>Ensure Red Hat subscription license covers Red Hat Software Collections.  Register host using subscription-manager and enter the username, password, and Pool ID when needed.</p>
 <div class="highlight"><pre><span></span><code>subscription-manager register
 </code></pre></div>
@@ -489,33 +517,39 @@ Password:
 The system has been registered with ID: 82076cd1-7f08-40fa-a536-d300c3a31f11
 The registered system name is: ira-sat-on-prem-demo-zone-2
 </code></pre></div>
-<h2 id="attach-host-to-satellite-location-control-plane">Attach host to Satellite location Control plane<a class="headerlink" href="#attach-host-to-satellite-location-control-plane" title="Permanent link">&para;</a></h2>
+<h3 id="attach-host-to-satellite-location-to-red-hat-satellite-network-rhsn">Attach host to Satellite location to Red Hat Satellite Network (RHSN)<a class="headerlink" href="#attach-host-to-satellite-location-to-red-hat-satellite-network-rhsn" title="Permanent link">&para;</a></h3>
 <p>After successful registration of host next attach the host to the subscription with command <code>subscription-manager attach</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@ira-on-prem-zone3 ira<span class="o">]</span><span class="c1"># subscription-manager attach </span>
 Installed Product Current Status:
 Product Name: Red Hat Enterprise Linux <span class="k">for</span> x86_64
 Status:       Subscribed
 </code></pre></div>
-<h2 id="add-rhel-repositories">Add RHEL repositories<a class="headerlink" href="#add-rhel-repositories" title="Permanent link">&para;</a></h2>
+<h2 id="3-add-rhel-repositories">3. Add RHEL repositories<a class="headerlink" href="#3-add-rhel-repositories" title="Permanent link">&para;</a></h2>
 <p>Use the following <code>subscription-manager</code> commands to enable the following repositories:</p>
+<p>Pull the latest subscription data from the server with the command <code>subscription-manager refresh</code></p>
 <div class="highlight"><pre><span></span><code>subscription-manager refresh
-subscription-manager repos --enable rhel-server-rhscl-7-rpms
-subscription-manager repos --enable rhel-7-server-optional-rpms
-subscription-manager repos --enable rhel-7-server-rh-common-rpms
-subscription-manager repos --enable rhel-7-server-supplementary-rpms
-subscription-manager repos --enable rhel-7-server-extras-rpms
 </code></pre></div>
 <p>Sample output:</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>root@ira-sat-on-prem-demo ~<span class="o">]</span><span class="c1"># subscription-manager repos --enable rhel-server-rhscl-7-rpms</span>
+<div class="highlight"><pre><span></span><code>All <span class="nb">local</span> data refreshed
+</code></pre></div>
+<p>Add repositories using command <code>subscription-manager repos --enable=*</code></p>
+<div class="highlight"><pre><span></span><code>subscription-manager repos --enable<span class="o">=</span>*
+</code></pre></div>
+<p>Sample output:</p>
+<div class="highlight"><pre><span></span><code>Repository <span class="s1">&#39;rhel-ha-for-rhel-7-server-eus-rpms&#39;</span> is enabled <span class="k">for</span> this system.
 Repository <span class="s1">&#39;rhel-server-rhscl-7-rpms&#39;</span> is enabled <span class="k">for</span> this system.
-<span class="o">[</span>root@ira-sat-on-prem-demo ~<span class="o">]</span><span class="c1"># subscription-manager repos --enable rhel-7-server-optional-rpms</span>
 Repository <span class="s1">&#39;rhel-7-server-optional-rpms&#39;</span> is enabled <span class="k">for</span> this system.
-<span class="o">[</span>root@ira-sat-on-prem-demo ~<span class="o">]</span><span class="c1"># subscription-manager repos --enable rhel-7-server-rh-common-rpms</span>
+Repository <span class="s1">&#39;rhel-7-server-eus-optional-rpms&#39;</span> is enabled <span class="k">for</span> this system.
 Repository <span class="s1">&#39;rhel-7-server-rh-common-rpms&#39;</span> is enabled <span class="k">for</span> this system.
-<span class="o">[</span>root@ira-sat-on-prem-demo ~<span class="o">]</span><span class="c1"># subscription-manager repos --enable rhel-7-server-supplementary-rpms</span>
+Repository <span class="s1">&#39;rhel-7-server-eus-rpms&#39;</span> is enabled <span class="k">for</span> this system.
+Repository <span class="s1">&#39;rhel-7-server-devtools-rpms&#39;</span> is enabled <span class="k">for</span> this system.
+Repository <span class="s1">&#39;rhel-ha-for-rhel-7-server-rpms&#39;</span> is enabled <span class="k">for</span> this system.
+Repository <span class="s1">&#39;rhel-rs-for-rhel-7-server-eus-rpms&#39;</span> is enabled <span class="k">for</span> this system.
+Repository <span class="s1">&#39;rhel-rs-for-rhel-7-server-rpms&#39;</span> is enabled <span class="k">for</span> this system.
+Repository <span class="s1">&#39;rhel-7-server-rpms&#39;</span> is enabled <span class="k">for</span> this system.
 Repository <span class="s1">&#39;rhel-7-server-supplementary-rpms&#39;</span> is enabled <span class="k">for</span> this system.
-<span class="o">[</span>root@ira-sat-on-prem-demo ~<span class="o">]</span><span class="c1"># subscription-manager repos --enable rhel-7-server-extras-rpms</span>
 Repository <span class="s1">&#39;rhel-7-server-extras-rpms&#39;</span> is enabled <span class="k">for</span> this system.
+Repository <span class="s1">&#39;rhel-7-server-eus-supplementary-rpms&#39;</span> is enabled <span class="k">for</span> this system.
 </code></pre></div>
                 
               
