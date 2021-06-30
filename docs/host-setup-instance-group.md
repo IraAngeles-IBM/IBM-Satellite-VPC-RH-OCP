@@ -5,17 +5,17 @@
 a. Select `Instance templates for VPC` in VPC Infastructure 
 ![vpc-instance-template](./images/vpc-instance-template.png)
 
-b. Upload the attach script file and add commands `subscription-manager refresh` and `subscription-manager repos --enable=*`
+b. Upload the attach script file and add the commands `subscription-manager refresh` and `subscription-manager repos --enable=*`
 
 ![vpc-upload-attach-script](./images/vpc-upload-attach-script.png)
 
-c.  Select **Location**, **Operating System Image** `RHEL 7`, then proceed with the **Create Instance template**
+c.  Select **Location**, **Operating System Image** `RHEL 7`, then proceed to the **Create Instance template**
 
 ![vpc-create-instance-template](./images/vpc-create-instance-template.png)
 
 ## 2. Create Intance Group
 
-Select the appropriate instance teamplate, then choose **Static**, **Set instance group size** (enter 6 for minimum Satellite host) and **Create instance group**
+Select the **instance teamplate**, then choose **Static**, **Set instance group size** (enter 6 for minimum Satellite host) and **Create instance group**
 
 ![vpc-instance-group](./images/vpc-instance-group.png)
 
@@ -23,7 +23,7 @@ This is the diplay after creating the instance group
  
  ![vpc-creating-instance-group](./images/vpc-creating-instance-group.png)
 
- Check the status in the **Virtual server instances**, add **Floating IP** if not yet added.
+ Check the status in the **Virtual server instances**, add the **Floating IP** for each hosts.
 
  ![vpc-creating-instance-group-status](./images/vpc-creating-instance-group-status.png)
 
