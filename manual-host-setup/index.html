@@ -331,15 +331,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#register-host-via-subscription-manager" class="md-nav__link">
-    Register host via subscription manager
+  <a href="#a-register-host-via-subscription-manager" class="md-nav__link">
+    a. Register host via subscription manager
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#attach-host-to-satellite-location-to-red-hat-satellite-network-rhsn" class="md-nav__link">
-    Attach host to Satellite location to Red Hat Satellite Network (RHSN)
+  <a href="#b-attach-host-to-satellite-location-to-red-hat-satellite-network-rhsn" class="md-nav__link">
+    b. Attach host to Satellite location to Red Hat Satellite Network (RHSN)
   </a>
   
 </li>
@@ -452,15 +452,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#register-host-via-subscription-manager" class="md-nav__link">
-    Register host via subscription manager
+  <a href="#a-register-host-via-subscription-manager" class="md-nav__link">
+    a. Register host via subscription manager
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#attach-host-to-satellite-location-to-red-hat-satellite-network-rhsn" class="md-nav__link">
-    Attach host to Satellite location to Red Hat Satellite Network (RHSN)
+  <a href="#b-attach-host-to-satellite-location-to-red-hat-satellite-network-rhsn" class="md-nav__link">
+    b. Attach host to Satellite location to Red Hat Satellite Network (RHSN)
   </a>
   
 </li>
@@ -503,8 +503,8 @@
 <div class="highlight"><pre><span></span><code>hostnamectl set-hostname ira-sat-on-prem-demo-zone-2
 </code></pre></div>
 <h2 id="2-host-red-hat-subcription-manager-registration">2. Host Red Hat Subcription Manager registration<a class="headerlink" href="#2-host-red-hat-subcription-manager-registration" title="Permanent link">&para;</a></h2>
-<p>This is step is for custom images or from on-prem setup.  These steps can be skipped for instances using the IBM Cloud provided OS images.</p>
-<h3 id="register-host-via-subscription-manager">Register host via subscription manager<a class="headerlink" href="#register-host-via-subscription-manager" title="Permanent link">&para;</a></h3>
+<p>The following steps are for custom images or from on-prem setup.  These steps can be skipped for instances using the IBM Cloud provided OS images.</p>
+<h3 id="a-register-host-via-subscription-manager">a. Register host via subscription manager<a class="headerlink" href="#a-register-host-via-subscription-manager" title="Permanent link">&para;</a></h3>
 <p>Ensure Red Hat subscription license covers Red Hat Software Collections.  Register host using subscription-manager and enter the username, password, and Pool ID when needed.</p>
 <div class="highlight"><pre><span></span><code>subscription-manager register
 </code></pre></div>
@@ -517,7 +517,7 @@ Password:
 The system has been registered with ID: 82076cd1-7f08-40fa-a536-d300c3a31f11
 The registered system name is: ira-sat-on-prem-demo-zone-2
 </code></pre></div>
-<h3 id="attach-host-to-satellite-location-to-red-hat-satellite-network-rhsn">Attach host to Satellite location to Red Hat Satellite Network (RHSN)<a class="headerlink" href="#attach-host-to-satellite-location-to-red-hat-satellite-network-rhsn" title="Permanent link">&para;</a></h3>
+<h3 id="b-attach-host-to-satellite-location-to-red-hat-satellite-network-rhsn">b. Attach host to Satellite location to Red Hat Satellite Network (RHSN)<a class="headerlink" href="#b-attach-host-to-satellite-location-to-red-hat-satellite-network-rhsn" title="Permanent link">&para;</a></h3>
 <p>After successful registration of host next attach the host to the subscription with command <code>subscription-manager attach</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>root@ira-on-prem-zone3 ira<span class="o">]</span><span class="c1"># subscription-manager attach </span>
 Installed Product Current Status:
