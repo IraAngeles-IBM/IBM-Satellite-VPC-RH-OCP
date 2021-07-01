@@ -491,12 +491,12 @@
 <h2 id="1-create-instance-templace-for-vpc">1. Create Instance templace for VPC<a class="headerlink" href="#1-create-instance-templace-for-vpc" title="Permanent link">&para;</a></h2>
 <p>a. Select <code>Instance templates for VPC</code> in VPC Infastructure 
 <img alt="vpc-instance-template" src="../images/vpc-instance-template.png" /></p>
-<p>b. Upload the attach script file and add the commands <code>subscription-manager refresh</code> and <code>subscription-manager repos --enable=*</code></p>
+<p>b. Select the system profile in <strong>View all profiles</strong>, upload the attach script file and add the commands <code>subscription-manager refresh</code> and <code>subscription-manager repos --enable=*</code>, upload <strong>SSH keys</strong> if needed.</p>
 <p><img alt="vpc-upload-attach-script" src="../images/vpc-upload-attach-script.png" /></p>
-<p>c.  Select <strong>Location</strong>, <strong>Operating System Image</strong> <code>RHEL 7</code>, then proceed to the <strong>Create Instance template</strong></p>
+<p>c. Enter the <strong>Name</strong> of the template, select <strong>Location</strong>, <strong>Operating System Image</strong> <code>Red Hat Enterprise Linux 7</code>, then proceed to the <strong>Create Instance template</strong></p>
 <p><img alt="vpc-create-instance-template" src="../images/vpc-create-instance-template.png" /></p>
 <h2 id="2-create-intance-group">2. Create Intance Group<a class="headerlink" href="#2-create-intance-group" title="Permanent link">&para;</a></h2>
-<p>Select the <strong>instance teamplate</strong>, then choose <strong>Static</strong>, <strong>Set instance group size</strong> (enter 6 for minimum Satellite host) and <strong>Create instance group</strong></p>
+<p>Select the <strong>instance teamplate</strong>, select <strong>Subnet</strong>, then choose <strong>Static</strong> in the scaling method, <strong>Set instance group size</strong> (enter 6 for minimum Satellite host) and <strong>Create instance group</strong></p>
 <p><img alt="vpc-instance-group" src="../images/vpc-instance-group.png" /></p>
 <p>This is the diplay after creating the instance group</p>
 <p><img alt="vpc-creating-instance-group" src="../images/vpc-creating-instance-group.png" /></p>
