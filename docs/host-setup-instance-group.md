@@ -5,17 +5,17 @@
 a. Select `Instance templates for VPC` in VPC Infastructure 
 ![vpc-instance-template](./images/vpc-instance-template.png)
 
-b. Upload the attach script file and add the commands `subscription-manager refresh` and `subscription-manager repos --enable=*`
+b. Select the system profile in **View all profiles**, upload the attach script file and add the commands `subscription-manager refresh` and `subscription-manager repos --enable=*`, upload **SSH keys** if needed.
 
 ![vpc-upload-attach-script](./images/vpc-upload-attach-script.png)
 
-c.  Select **Location**, **Operating System Image** `RHEL 7`, then proceed to the **Create Instance template**
+c. Enter the **Name** of the template, select **Location**, **Operating System Image** `Red Hat Enterprise Linux 7`, then proceed to the **Create Instance template**
 
 ![vpc-create-instance-template](./images/vpc-create-instance-template.png)
 
 ## 2. Create Intance Group
 
-Select the **instance teamplate**, then choose **Static**, **Set instance group size** (enter 6 for minimum Satellite host) and **Create instance group**
+ Select the **instance teamplate**, select **Subnet**, then choose **Static** in the scaling method, **Set instance group size** (enter 6 for minimum Satellite host) and **Create instance group**
 
 ![vpc-instance-group](./images/vpc-instance-group.png)
 
