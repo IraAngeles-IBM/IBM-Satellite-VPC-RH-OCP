@@ -11,7 +11,7 @@ edit_uri: edit/main/docs
 nav:
     - Welcome:
       - About: index.md
-    - Workshop:
+    - Setup Process:
       - Create VPC Server Instance for Satellite Host: vpc-setup.md
       - Setup Satellite Host:
         - Manual Setup: manual-host-setup.md
