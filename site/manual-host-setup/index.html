@@ -538,7 +538,7 @@
                   <h1>Manual Setup</h1>
                 
                 <h2 id="setup-each-host-manually">Setup each Host Manually<a class="headerlink" href="#setup-each-host-manually" title="Permanent link">&para;</a></h2>
-<p>The following steps are the setup required for each hosts.</p>
+<p>The following steps are the setup required for each hosts.  For IBM Cloud host, follow this steps in <a href="../host-setup-instance-group/">VPC Instance Group Setup</a></p>
 <h2 id="1-assign-unique-hostname">1. Assign unique hostname<a class="headerlink" href="#1-assign-unique-hostname" title="Permanent link">&para;</a></h2>
 <p>SSH to each host and update the hostname. Use the command <code>hostnamectl</code> to update the hostname. Hostname will be updated however, terminal session hostname will be update upon next login or re-login to check if update. Ensure hostnames are unique to avoid conflict during setup. If the host is already assigned with a unique hostname, this step can be skipped unless it is desired to assign a preferred hostname.</p>
 <div class="highlight"><pre><span></span><code>hostnamectl set-hostname ira-sat-on-prem-demo-zone-2
