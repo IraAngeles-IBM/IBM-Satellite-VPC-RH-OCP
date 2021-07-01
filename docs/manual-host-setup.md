@@ -1,6 +1,6 @@
 ## Setup each Host Manually
 
-The following steps are the setup required for each hosts.  For IBM Cloud host, follow this steps in [VPC Instance Group Setup](host-setup-instance-group.md)
+The following steps are the setup required for each hosts.  For IBM Cloud host, follow the steps in [VPC Instance Group Setup](host-setup-instance-group.md)
 
 ## 1. Assign unique hostname
 
